@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'bestaid.0liin.mongodb.net'),
+        host: env('DATABASE_HOST', 'server'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'bestaid'),
-        username: env('DATABASE_USERNAME', 'bestaid'),
-        password: env('DATABASE_PASSWORD', 'sYJo55yGfin7I8nm'),
+        database: env('DATABASE_NAME', 'database'),
+        username: env('DATABASE_USERNAME', 'username'),
+        password: env('DATABASE_PASSWORD', 'password'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
